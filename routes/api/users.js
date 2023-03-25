@@ -6,9 +6,11 @@ const verifyRoles = require('../../middleware/verifyRoles');
 
 router.route('/')
     .get(verifyRoles(ROLES_LIST.Admin), usersController.getAllUsers)
-    .delete(verifyRoles(ROLES_LIST.Admin), usersController.deleteUser);
+    .put(verifyRoles(ROLES_LIST.Admin), usersController.permitUser);
 
 router.route('/:id')
     .get(verifyRoles(ROLES_LIST.Admin), usersController.getUser);
 
+router.route('/:username')
+    .delete(verifyRoles(ROLES_LIST.Admin), usersController.deleteUser);
 module.exports = router;

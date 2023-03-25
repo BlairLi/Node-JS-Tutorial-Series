@@ -7,13 +7,24 @@ const getAllUsers = async (req, res) => {
 }
 
 const deleteUser = async (req, res) => {
-    if (!req?.body?.id) return res.status(400).json({ "message": 'User ID required' });
-    const user = await User.findOne({ _id: req.body.id }).exec();
+    if (!req?.params?.username) return res.status(400).json({ "message": 'User ID required' });
+        const user = await User.findOne({ username: req.params.username }).exec();
     if (!user) {
-        return res.status(204).json({ 'message': `User ID ${req.body.id} not found` });
+        return res.status(204).json({ 'message': `User ID ${req.params.username} not found` });
     }
-    const result = await user.deleteOne({ _id: req.body.id });
+    const result = await user.deleteOne({ username: req.params.username });
     res.json(result);
+    }
+    
+const permitUser = async (req, res) => {
+if (!req?.body?.username) return res.status(400).json({ "message": 'User ID required' });
+    const user = await User.findOne({ username: req.body.username }).exec();
+if (!user) {
+    return res.status(204).json({ 'message': `User ID ${req.body.username} not found` });
+}
+if (req.body?.roles) user.roles = req.body.roles;
+const result = await user.save();
+res.json(result);
 }
 
 const getUser = async (req, res) => {
@@ -28,5 +39,6 @@ const getUser = async (req, res) => {
 module.exports = {
     getAllUsers,
     deleteUser,
-    getUser
+    getUser,
+    permitUser
 }
