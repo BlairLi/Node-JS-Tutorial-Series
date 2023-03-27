@@ -17,14 +17,14 @@ const deleteUser = async (req, res) => {
     }
     
 const permitUser = async (req, res) => {
-if (!req?.body?.username) return res.status(400).json({ "message": 'User ID required' });
+    if (!req?.body?.username) return res.status(400).json({ "message": 'User ID required' });
     const user = await User.findOne({ username: req.body.username }).exec();
-if (!user) {
-    return res.status(204).json({ 'message': `User ID ${req.body.username} not found` });
-}
-if (req.body?.roles) user.roles = req.body.roles;
-const result = await user.save();
-res.json(result);
+    if (!user) {
+        return res.status(204).json({ 'message': `User ID ${req.body.username} not found` });
+    }
+    if (req.body?.roles) user.roles = req.body.roles;
+    const result = await user.save();
+    res.json(result);
 }
 
 const getUser = async (req, res) => {

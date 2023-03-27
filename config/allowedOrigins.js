@@ -4,6 +4,7 @@ const allowedOrigins = [
     'http://localhost:3500',
     'http://localhost:3000',
     'http://localhost:3001',
+    'https://master.dbs29o8fuwcy2.amplifyapp.com/'
 ];
 
 module.exports = allowedOrigins;
