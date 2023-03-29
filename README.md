@@ -11,5 +11,3 @@ This repository shares the code applied during the Youtube tutorial. The tutoria
 
 [YouTube Tutorial](https://youtu.be/-PdjUx9JZ2E) for this repository.
 
-### Academic Honesty
-
