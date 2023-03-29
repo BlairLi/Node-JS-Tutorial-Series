@@ -13,4 +13,3 @@ This repository shares the code applied during the Youtube tutorial. The tutoria
 
 ### Academic Honesty
 
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiargism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
