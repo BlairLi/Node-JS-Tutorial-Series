@@ -7,7 +7,22 @@ _Remember to add your .env variables in the deployed version_
 
 **Description:**
 
-intallation instruction
-npm install
+#### Getting Started
 
-npm run dev
+1. Clone the repository.
+
+    ```shell
+    git clone https://github.com/BlairLi/Node-JS-Tutorial-Series.git
+    cd Node-JS-Tutorial-Series
+    ```
+
+1. Install all dependencies with NPM.
+
+    ```shell
+    npm install
+    ```
+1. Run the frontend server.
+
+    ```shell
+    npm run dev
+    ```
