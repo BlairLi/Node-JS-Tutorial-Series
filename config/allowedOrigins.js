@@ -7,8 +7,6 @@
 //     'https://65854511b418e40008300307--bucolic-druid-71c9aa.netlify.app',
 //     'https://master--bucolic-druid-71c9aa.netlify.app'
 // ];
-const allowedOrigins = [
-    
-];
+const allowedOrigins = '*'
 
 module.exports = allowedOrigins;
