@@ -63,6 +63,12 @@ app.all('*', (req, res) => {
 
 app.use(errorHandler);
 
+app.use((req, res, next) => {
+    console.log('Incoming request:', req.method, req.path);
+    console.log('Origin:', req.get('Origin'));
+    next();
+  });
+
 mongoose.connection.once('open', () => {
     console.log('Connected to MongoDB');
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
