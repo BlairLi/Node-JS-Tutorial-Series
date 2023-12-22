@@ -2372,3 +2372,6 @@
 20231222	03:33:03	4578e3c4-ecf9-44ae-8305-0408ac6e52b5	OPTIONS	https://65854511b418e40008300307--bucolic-druid-71c9aa.netlify.app	/refresh
 20231222	03:33:03	e83bf739-c77c-4841-9247-8f39d9a8d977	GET	https://65854511b418e40008300307--bucolic-druid-71c9aa.netlify.app	/refresh
 20231222	03:33:03	a383b931-975f-463a-a8ed-66334371c356	GET	https://65854511b418e40008300307--bucolic-druid-71c9aa.netlify.app	/dashboards/undefined
+20231222	03:57:10	5c2032e2-64f1-40e7-8844-8cc3a4e29b4d	GET	undefined	/
+20231222	03:57:10	fed12541-0bd0-4573-a2af-ca6c55dccc69	GET	undefined	/css/style.css
+20231222	03:57:10	8964cfea-bef4-44d6-9e1a-d4e59efa9545	GET	undefined	/favicon.ico
