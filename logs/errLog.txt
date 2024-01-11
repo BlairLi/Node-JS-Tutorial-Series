@@ -38,3 +38,5 @@
 20231222	03:20:39	95e1b77f-3f46-4b18-921d-a04b5ca1b3f0	Error: Not allowed by CORS
 20231222	10:46:07	baccf3fc-7bde-4fdb-98d0-6f58dae26a30	Error: ENOENT: no such file or directory, stat 'C:\Users\15791\Desktop\cisc498\Node-JS-Tutorial-Series\views\index.html'
 20231222	10:47:34	21b53509-abb3-46f7-ad42-810438c31c8e	Error: ENOENT: no such file or directory, stat 'C:\Users\15791\Desktop\cisc498\Node-JS-Tutorial-Series\views\index.html'
+20231224	13:05:50	9783fc35-e8aa-40cb-8709-23e352b33bf6	Error: Not allowed by CORS
+20231224	13:06:08	afbde1e2-450c-488f-84b6-5df2a84ea808	Error: Not allowed by CORS
